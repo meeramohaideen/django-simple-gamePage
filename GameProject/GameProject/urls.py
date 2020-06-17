@@ -21,4 +21,5 @@ urlpatterns = [
     path('login',views.loginPage,name="login"),
     path('logout/',views.userLogout,name='logout'),
     path('admin/', admin.site.urls),
+    
 ]
