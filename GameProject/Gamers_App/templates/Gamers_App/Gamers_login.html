@@ -1,0 +1,53 @@
+{% extends "Gamers_App/Gamers_App.html" %}
+
+{% load static %}
+
+
+
+{% block body_block %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <br><h3 style="text-align: center;color: slateblue"> Please Login to continue</h3><br>
+
+    <div class="container" style="height: 400px;width: 500px;">
+    <div class="Jumbotron" style="height: 300px;width: 500px;background-color: #ecf08d">
+
+<form action="{% url "login" %}" method="POST">
+{% csrf_token %}
+
+<label>User name : </label><br>
+<input style="border-radius: 50px;" type="text" name="username" ><br>
+    <br>
+<label>Password : </label><br>
+<input style="border-radius: 50px; " type="password" name="password" >
+    <br>
+    <br>
+<input style="margin-left: auto;margin-right: auto;display: block" class="btn btn-primary" type="submit" value="Log in">
+</form>
+
+    </div></div><br>
+
+
+{% endblock %}
+
