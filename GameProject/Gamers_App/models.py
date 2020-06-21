@@ -3,6 +3,7 @@ from django.contrib.auth.models import User #default USER class imported
 
 # Create your models here.
 
+
 class UserRegister(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE)
 
