@@ -20,6 +20,5 @@ urlpatterns = [
     path('',views.IndexView.as_view(),name="indexView"),
     path('login',views.loginPage,name="login"),
     path('logout/',views.userLogout,name='logout'),
-    path('admin/', admin.site.urls),
-    
+    path('admin/', admin.site.urls)    
 ]
